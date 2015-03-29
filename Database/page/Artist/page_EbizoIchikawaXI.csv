@@ -1,3 +1,4 @@
-date,id,likes,talking_about_count,checkins,found
-26-Mar-15,481497015267621,166885,21804,0,yes
+date,likes,talking_about_count,checkins,found
+26-Mar-15,166885,21804,0,yes
+29-Mar-15,169479,21697,0,no
 

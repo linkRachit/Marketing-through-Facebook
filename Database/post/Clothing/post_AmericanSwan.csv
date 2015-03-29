@@ -1,2 +1,3 @@
-date,id,given_post,post1,post2,post3,post4,post5,post6,post7,post8,post9,post10,average,ratio
-26-Mar-15,465268256851901,2,2895,2721,784,18,21,25,49,45,66,45,
+date,given_post,post1,post2,post3,post4,post5,post6,post7,post8,post9,post10,average,ratio
+26-Mar-15,2,2895,2721,784,18,21,25,49,45,66,45,
+29-Mar-15,15,112,71,97,106,5675,47,52,2345,3420,2801,

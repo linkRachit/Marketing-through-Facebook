@@ -1,2 +1,3 @@
-date,id,given_post,post1,post2,post3,post4,post5,post6,post7,post8,post9,post10,average,ratio
-26-Mar-15,222439217873956,340,1,5,0,0,0,2,1,2,1,
+date,given_post,post1,post2,post3,post4,post5,post6,post7,post8,post9,post10,average,ratio
+26-Mar-15,340,1,5,0,0,0,2,1,2,1,7,
+29-Mar-15,396,1,2,2,1,5,0,0,0,2,2,
