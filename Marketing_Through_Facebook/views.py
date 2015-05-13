@@ -6,10 +6,7 @@ def home(request):
 	template = "index.html"
 	return render( request, template, context)
 
-def engine(request):
-	context = {}
-	template = "hello.html"
-	return render( request, template, context)
+
 #def home2(request):
 	#print("welcome")
 	#return 

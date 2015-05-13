@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'post',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'Marketing_Through_Facebook.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates/')],
+        'DIRS': [os.path.join(BASE_DIR,'templates/'),os.path.join(BASE_DIR,'post/templates/'),os.path.join(BASE_DIR,'page/templates/'),os.path.join(BASE_DIR,'website/templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
