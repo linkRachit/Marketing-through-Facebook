@@ -90,6 +90,12 @@
                 <!-- /.row -->
             </div>
             <!-- /.container-fluid -->
+            <ul style="list-style-type:none">
+                    {% for file in filelist %}
+                    <li><a href="#">{{ file }}</a></li>
+
+                    {% endfor %}
+                </ul> 
         </div>
         <!-- /#page-wrapper -->
 

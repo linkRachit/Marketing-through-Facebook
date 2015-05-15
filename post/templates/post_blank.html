@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blank</title>
+    <title>POST</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -68,7 +68,7 @@
                         </li>
                         
                         <li>
-                            <a href="blank.html"><i class="fa fa-files-o fa-fw"></i>Blank Page
+                            <a href="blank.html"><i class="fa fa-files-o fa-fw"></i>List Page
                             </a>
                         </li>
                         
@@ -83,11 +83,21 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Blank</h1>
+                        <h1 class="page-header">POST(Category)</h1>
                     </div>
                     <!-- /.col-lg-12 -->
+
                 </div>
                 <!-- /.row -->
+                <ul style="list-style-type:none">
+                    {% for file in filelist %}
+                    <li><a href="{% url 'get_file' file=file %}">{{ file }}</a></li>
+
+                    {% endfor %}
+                </ul> 
+                
+    
+    
             </div>
             <!-- /.container-fluid -->
         </div>
@@ -95,7 +105,15 @@
 
     </div>
     <!-- /#wrapper -->
-
+   <!-- {% import os 
+       for dirname, dirnames, filenames in os.walk('./Database/post'):
+           print(dirnames) %}
+-->
+    
+    <!--{% for file in value %}
+    <a href="{{file.url}}">{{ file.name }}</a>
+    {% endfor %}
+-->
     <!-- jQuery -->
     <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
 

@@ -1,10 +1,20 @@
 from django.shortcuts import render
+import os
 
 # Create your views here.
 def page_home(request):
-	context = {}
+	#context = {}
+	value = []
 	template = "page_blank.html"
-	return render( request, template, context)
+	value = list_folder()
+	
+	return render( request, template, {'filelist':value[0]})
+
+def list_folder():
+	values = []
+	for dirname, dirnames, filenames in os.walk('./Database/page'):
+		values.append(dirnames)
+	return values
 
 def page_table(request):
 	context = {}

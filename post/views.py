@@ -1,10 +1,22 @@
-from django.shortcuts import render
+from django.shortcuts import render,render_to_response
+import os
+import csv
+from django.http import HttpResponse
 
 # Create your views here.
 def post_home(request):
-	context = {}
+	#context = {}
+	value = []
 	template = "post_blank.html"
-	return render( request, template, context)
+	value = list_folder()
+	
+	return render( request, template, {'filelist':value[0]})
+
+def list_folder():
+	values = []
+	for dirname, dirnames, filenames in os.walk('./Database/post'):
+		values.append(dirnames)
+	return values	
 
 def post_table(request):
 	context = {}
@@ -14,4 +26,4 @@ def post_table(request):
 def post_engine(request):
 	context = {}
 	template = "post_engine.html"
-	return render( request, template, context)		
+	return render( request, template, context)
