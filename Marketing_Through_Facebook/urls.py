@@ -4,9 +4,25 @@ from django.contrib import admin
 urlpatterns = [
     # Examples:
     url(r'^$', 'Marketing_Through_Facebook.views.home', name='home'),
+
     url(r'^post/blank\.html$', 'post.views.post_home', name='post_home'),
-    url(r'^post/tables\.html$', 'post.views.post_table', name='post_table'),
-    url(r'^post/engine\.html$', 'post.views.post_engine', name='post_engine'),
+
+    url(r'^post/pickup\.html$', 'post.views.post_pickup', name='post_pickup'),
+
+    url(r'^post/Clothing\.html$', 'post.views.post_Clothing', name='post_Clothing'),
+    url(r'^post/Education\.html$', 'post.views.post_Education', name='post_Education'),
+    url(r'^post/InternetSoftware\.html$', 'post.views.post_InternetSoftware', name='post_InternetSoftware'),
+    url(r'^post/ProductService\.html$', 'post.views.post_ProductService', name='post_ProductService'),
+
+    url(r'^post/engineClothing\.html$', 'post.views.post_engineClothing', name='post_engineClothing'),
+    url(r'^post/engineEducation\.html$', 'post.views.post_engineEducation', name='post_engineEducation'),
+    url(r'^post/engineInternetSoftware\.html$', 'post.views.post_engineInternetSoftware', name='post_engineInternetSoftware'),
+    url(r'^post/engineProductService\.html$', 'post.views.post_engineProductService', name='post_engineProductService'),
+
+
+
+
+
 
     url(r'^page/blank\.html$', 'page.views.page_home', name='page_home'),
     url(r'^page/tables\.html$', 'page.views.page_table', name='page_table'),

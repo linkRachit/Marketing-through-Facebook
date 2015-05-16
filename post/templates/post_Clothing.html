@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Table</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="{% static 'bower_components/metisMenu/dist/metisMenu.min.css' %}" rel="stylesheet">
+
+
+    <!-- DataTables CSS -->
+    <link href="{% static 'bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css' %}" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="{% static 'bower_components/datatables-responsive/css/dataTables.responsive.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'dist/css/sb-admin-2.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'bower_components/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="engine.html">Dashboard</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <br>
+                        <br>
+                        <br>
+                        
+                        <li>
+                            <a href="engineClothing.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        
+                        <li>
+                            <a href="Clothing.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                        </li>
+                        
+                        <li>
+                            <a href="blank.html"><i class="fa fa-files-o fa-fw"></i>Blank Page
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Tables</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            DataTables Advanced Tables
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="dataTable_wrapper">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Likes</th>
+                                            <th>Talking About</th>
+                                            <th>Found</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td>26-Mar-15</td>
+                                            <td>498344</td>
+                                            <td>3017</td>
+                                            <td class="center">yes</td>
+                                            
+                                        </tr>
+                                        <tr class="even gradeC">
+                                            <td>27-Mar-15</td>
+                                            <td>498799</td>
+                                            <td>3422</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                            <td>28-Mar-15</td>
+                                            <td>499124</td>
+                                            <td>3812</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="even gradeA">
+                                            <td>29-Mar-15</td>
+                                            <td>499701</td>
+                                            <td>4216</td>
+                                            <td class="center">yes</td>
+                                            
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                            <td>30-Mar-15</td>
+                                            <td>500547</td>
+                                            <td>4216</td>
+                                            <td class="center">yes</td>
+                                            
+                                        </tr>
+                                        <tr class="even gradeA">
+                                            <td>31-Mar-15</td>
+                                            <td>500659</td>
+                                            <td>13629</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>01-Apr-15</td>
+                                            <td>500795</td>
+                                            <td>19084</td>
+                                            <td class="center">yes</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>02-Apr-15</td>
+                                            <td>501422</td>
+                                            <td>33530</td>
+                                            <td class="center">yes</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>03-Apr-15</td>
+                                            <td>502098</td>
+                                            <td>33140</td>
+                                            <td class="center">yes</td>
+                                          
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>04-Apr-15</td>
+                                            <td>502480</td>
+                                            <td>33140</td>
+                                            <td class="center">yes</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>05-Apr-15</td>
+                                            <td>502808</td>
+                                            <td>26122</td>
+                                            <td class="center">yes</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>06-Apr-15</td>
+                                            <td>503452</td>
+                                            <td>23568</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>07-Apr-15</td>
+                                            <td>504154</td>
+                                            <td>23568</td>
+                                            <td class="center">no</td>
+                                           
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>08-Apr-15</td>
+                                            <td>505126</td>
+                                            <td>23568</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>09-Apr-15</td>
+                                            <td>506125</td>
+                                            <td>23568</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>10-Apr-15</td>
+                                            <td>507125</td>
+                                            <td>23568</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>11-Apr-15</td>
+                                            <td>508356</td>
+                                            <td>23568</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>12-Apr-15</td>
+                                            <td>509356</td>
+                                            <td>23568</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>13-Apr-15</td>
+                                            <td>509999</td>
+                                            <td>23568</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>14-Apr-15</td>
+                                            <td>510256</td>
+                                            <td>23568</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>15-Apr-15</td>
+                                            <td>511288</td>
+                                            <td>23568</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>16-Apr-15</td>
+                                            <td>511299</td>
+                                            <td>23568</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>17-Apr-15</td>
+                                            <td>511299</td>
+                                            <td>24589</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>18-Apr-15</td>
+                                            <td>511299</td>
+                                            <td>23567</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>19-Apr-15</td>
+                                            <td>511355</td>
+                                            <td>23458</td>
+                                            <td class="center">no</td>
+                                            
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td>20-Apr-15</td>
+                                            <td>511388</td>
+                                            <td>22555</td>
+                                            <td class="center">no</td>
+                                          
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                            
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            
+        </div>
+        <!-- /#page-wrapper -->
+
+
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Tables</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            DataTables Advanced Tables
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="dataTable_wrapper">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Average</th>
+                                            <th>Ratio</th>
+                                            <th>Final verdict</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX"><td>
+26-Mar-15
+</td><td>
+6667
+</td><td>
+0
+</td><td>
+</td></tr>
+<tr class="odd gradeX"><td>
+29-Mar-15
+</td><td>
+1473
+</td><td>
+0
+</td><td>
+</td></tr>
+<tr class="odd gradeX"><td>
+30-Mar-15
+</td><td>
+2545
+</td><td>
+1
+</td><td>
+</td></tr>
+<tr class="odd gradeX"><td>
+01-Apr-15
+</td><td>
+1796
+</td><td>
+0
+</td><td>
+</td></tr>
+<tr class="odd gradeX"><td>
+02-Apr-15
+</td><td>
+6510
+</td><td>
+0
+</td><td>
+</td></tr>
+<tr class="odd gradeX"><td>
+03-Apr-15
+</td><td>
+322
+</td><td>
+8
+</td><td>
+</td></tr>
+<tr class="odd gradeX"><td>
+04-Apr-15
+</td><td>
+168
+</td><td>
+2
+</td><td>
+</td></tr>
+<tr class="odd gradeX"><td>
+05-Apr-15
+</td><td>
+112
+</td><td>
+10
+</td><td>
+</td></tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                            
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            
+        </div>
+        <!-- /#page-wrapper -->
+
+
+
+
+
+
+
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="{% static 'bower_components/metisMenu/dist/metisMenu.min.js' %}"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="{% static 'bower_components/datatables/media/js/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js' %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static 'dist/js/sb-admin-2.js' %}"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+                responsive: true
+        });
+    });
+    </script>
+
+</body>
+
+</html>
