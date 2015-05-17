@@ -37,13 +37,7 @@ urlpatterns = [
 
 
 
-
-
-
-
-    url(r'^website/blank\.html$', 'website.views.website_home', name='website_home'),
     url(r'^website/tables\.html$', 'website.views.website_table', name='website_table'),
-    url(r'^website/engine\.html$', 'website.views.website_engine', name='website_engine'),
      # url(r'^home2$', 'Marketing_Through_Facebook.views.home2', name='home2'),
     # url(r'^blog/', include('blog.urls')),
 
