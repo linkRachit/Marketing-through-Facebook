@@ -3,87 +3,99 @@ $(function() {
     Morris.Area({
         element: 'morris-area-chart',
         data: [{
-            period: '2015-03-26',
-            AmericanSwan: 0,
-            ShopFashionara: 4,
-            voxpopclothing: null,
-            
-        }, {
             period: '2015-03-29',
-            AmericanSwan: 0,
-            ShopFashionara: null,
-            voxpopclothing: 3,
+            AppMakr: 10,
+            icicidirect: null,
+            Payoneer: null,
             
         }, {
             period: '2015-03-30',
-            AmericanSwan: 1,
-            ShopFashionara: 10,
-            voxpopclothing: 1,
-            
-        }, {
-            period: '2015-03-31',
-            AmericanSwan: null,
-            ShopFashionara: null,
-            voxpopclothing: 10,
-            
-        }, {
-            period: '2015-04-01',
-            AmericanSwan: 0,
-            ShopFashionara: 5,
-            voxpopclothing: null,
+            AppMakr: 10,
+            icicidirect: null,
+            Payoneer: null,
             
         }, {
             period: '2015-04-02',
-            AmericanSwan: 0,
-            ShopFashionara: 0,
-            voxpopclothing: null,
+            AppMakr: null,
+            icicidirect: 0,
+            Payoneer: 1,
             
         }, {
             period: '2015-04-03',
-            AmericanSwan: 8,
-            ShopFashionara: 0,
-            voxpopclothing: 10,
+            AppMakr: 10,
+            icicidirect: 10,
+            Payoneer: 1,
             
         }, {
             period: '2015-04-04',
-            AmericanSwan: 2,
-            ShopFashionara: 1,
-            voxpopclothing: 10,
+            AppMakr: 7,
+            icicidirect: 4,
+            Payoneer: 10,
             
         }, {
             period: '2015-04-05',
-            AmericanSwan: 10,
-            ShopFashionara: 0,
-            voxpopclothing: 1,
+            AppMakr: 8,
+            icicidirect: null,
+            Payoneer: 1,
             
         }, {
             period: '2015-04-06',
-            AmericanSwan: null,
-            ShopFashionara: null,
-            voxpopclothing: 0,
+            AppMakr: null,
+            icicidirect: null,
+            Payoneer: 0,
             
         }, {
             period: '2015-04-07',
-            AmericanSwan: null,
-            ShopFashionara: null,
-            voxpopclothing: 8,
+            AppMakr: 5,
+            icicidirect: 2,
+            Payoneer: 8,
             
         }, {
             period: '2015-04-08',
-            AmericanSwan: null,
-            ShopFashionara: null,
-            voxpopclothing: 2,
+            AppMakr: null,
+            icicidirect: 10,
+            Payoneer: 2,
             
         }, {
             period: '2015-04-09',
-            AmericanSwan: null,
-            ShopFashionara: null,
-            voxpopclothing: 10,
+            AppMakr: 0,
+            icicidirect: 5,
+            Payoneer: 10,
+            
+        }, {
+            period: '2015-04-10',
+            AppMakr: null,
+            icicidirect: 0,
+            Payoneer: null,
+            
+        }, {
+            period: '2015-04-11',
+            AppMakr: 0,
+            icicidirect: null,
+            Payoneer: null,
+            
+        }, {
+            period: '2015-04-13',
+            AppMakr: 8,
+            icicidirect: null,
+            Payoneer: null,
+            
+        }, {
+            period: '2015-04-14',
+            AppMakr: 2,
+            icicidirect: null,
+            Payoneer: null,
+            
+        }, {
+            period: '2015-04-15',
+            AppMakr: 10,
+            icicidirect: null,
+            Payoneer: null,
             
         }],
         xkey: 'period',
-        ykeys: ['AmericanSwan', 'ShopFashionara', 'voxpopclothing'],
-        labels: ['AmericanSwan', 'ShopFashionara', 'voxpopclothing'],
+        ykeys: ['AppMakr', 'icicidirect', 'Payoneer'],
+        labels: ['AppMakr', 'icicidirect', 'Payoneer'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
@@ -92,14 +104,14 @@ $(function() {
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
-            label: "AmericanSwan",
-            value: 8
+            label: "AppMakr",
+            value: 11
         }, {
-            label: "ShopFashionara",
-            value: 8
+            label: "icicidirect",
+            value: 7
         }, {
-            label: "voxpopclothing",
-            value: 10
+            label: "Payoneer",
+            value: 7
         }],
         resize: true
     });

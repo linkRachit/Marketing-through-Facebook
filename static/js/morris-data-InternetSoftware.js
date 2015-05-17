@@ -4,86 +4,80 @@ $(function() {
         element: 'morris-area-chart',
         data: [{
             period: '2015-03-26',
-            AmericanSwan: 0,
-            ShopFashionara: 4,
-            voxpopclothing: null,
+            ararazustudio: null,
+            housing: 5,
+            Runscope: null,
             
         }, {
             period: '2015-03-29',
-            AmericanSwan: 0,
-            ShopFashionara: null,
-            voxpopclothing: 3,
+            ararazustudio: null,
+            housing: null,
+            Runscope: 10,
             
         }, {
             period: '2015-03-30',
-            AmericanSwan: 1,
-            ShopFashionara: 10,
-            voxpopclothing: 1,
+            ararazustudio: null,
+            housing: null,
+            Runscope: 10,
             
         }, {
             period: '2015-03-31',
-            AmericanSwan: null,
-            ShopFashionara: null,
-            voxpopclothing: 10,
+            ararazustudio: null,
+            housing: 6,
+            Runscope: null,
             
         }, {
             period: '2015-04-01',
-            AmericanSwan: 0,
-            ShopFashionara: 5,
-            voxpopclothing: null,
+            ararazustudio: null,
+            housing: 8,
+            Runscope: 10,
             
         }, {
             period: '2015-04-02',
-            AmericanSwan: 0,
-            ShopFashionara: 0,
-            voxpopclothing: null,
-            
-        }, {
-            period: '2015-04-03',
-            AmericanSwan: 8,
-            ShopFashionara: 0,
-            voxpopclothing: 10,
+            ararazustudio: null,
+            housing: null,
+            Runscope: 10,
             
         }, {
             period: '2015-04-04',
-            AmericanSwan: 2,
-            ShopFashionara: 1,
-            voxpopclothing: 10,
+            ararazustudio: 0,
+            housing: null,
+            Runscope: 10,
             
         }, {
             period: '2015-04-05',
-            AmericanSwan: 10,
-            ShopFashionara: 0,
-            voxpopclothing: 1,
-            
-        }, {
-            period: '2015-04-06',
-            AmericanSwan: null,
-            ShopFashionara: null,
-            voxpopclothing: 0,
+            ararazustudio: null,
+            housing: null,
+            Runscope: 10,
             
         }, {
             period: '2015-04-07',
-            AmericanSwan: null,
-            ShopFashionara: null,
-            voxpopclothing: 8,
+            ararazustudio: 0,
+            housing: null,
+            Runscope: null,
             
         }, {
             period: '2015-04-08',
-            AmericanSwan: null,
-            ShopFashionara: null,
-            voxpopclothing: 2,
+            ararazustudio: 0,
+            housing: null,
+            Runscope: null,
             
         }, {
             period: '2015-04-09',
-            AmericanSwan: null,
-            ShopFashionara: null,
-            voxpopclothing: 10,
+            ararazustudio: null,
+            housing: null,
+            Runscope: 10,
+            
+        }, {
+            period: '2015-04-20',
+            ararazustudio: null,
+            housing: null,
+            Runscope: 10,
             
         }],
         xkey: 'period',
-        ykeys: ['AmericanSwan', 'ShopFashionara', 'voxpopclothing'],
-        labels: ['AmericanSwan', 'ShopFashionara', 'voxpopclothing'],
+        ykeys: ['ararazustudio', 'housing', 'Runscope'],
+        labels: ['ararazustudio', 'housing', 'Runscope'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
@@ -92,14 +86,14 @@ $(function() {
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
-            label: "AmericanSwan",
-            value: 8
+            label: "ararazustudio",
+            value: 3
         }, {
-            label: "ShopFashionara",
-            value: 8
+            label: "housing.com",
+            value: 3
         }, {
-            label: "voxpopclothing",
-            value: 10
+            label: "Runscope",
+            value: 8
         }],
         resize: true
     });
