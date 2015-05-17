@@ -7,7 +7,7 @@ $(function() {
             iphone: 2666,
             ipad: null,
             itouch: 2647,
-            touch: 2356
+            
         }, {
             period: '2015 W14',
             iphone: 2778,

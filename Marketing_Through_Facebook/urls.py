@@ -2,7 +2,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    # Examples:
+    
     url(r'^$', 'Marketing_Through_Facebook.views.home', name='home'),
 
     url(r'^post/blank\.html$', 'post.views.post_home', name='post_home'),
