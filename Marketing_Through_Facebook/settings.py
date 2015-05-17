@@ -56,7 +56,7 @@ ROOT_URLCONF = 'Marketing_Through_Facebook.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates/'),os.path.join(BASE_DIR,'post/templates/'),os.path.join(BASE_DIR,'page/templates/'),os.path.join(BASE_DIR,'website/templates/')],
+        'DIRS': [os.path.join(BASE_DIR,'templates/'),os.path.join(BASE_DIR,'post/templates/'),os.path.join(BASE_DIR,'page/templates/'),os.path.join(BASE_DIR,'website/templates/'),os.path.join(BASE_DIR,'compare/templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

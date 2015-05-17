@@ -38,6 +38,16 @@ urlpatterns = [
 
 
     url(r'^website/tables\.html$', 'website.views.website_table', name='website_table'),
+
+
+
+    url(r'^compare/blank\.html$', 'compare.views.page_home', name='page_home'),
+    url(r'^compare/engineProductService\.html$', 'compare.views.compare_engineProductService', name='compare_engineProductService'),
+
+
+
+
+
      # url(r'^home2$', 'Marketing_Through_Facebook.views.home2', name='home2'),
     # url(r'^blog/', include('blog.urls')),
 
