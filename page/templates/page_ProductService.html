@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Table</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="{% static 'bower_components/metisMenu/dist/metisMenu.min.css' %}" rel="stylesheet">
+
+
+    <!-- DataTables CSS -->
+    <link href="{% static 'bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css' %}" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="{% static 'bower_components/datatables-responsive/css/dataTables.responsive.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'dist/css/sb-admin-2.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'bower_components/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="engineProductService.html">Dashboard</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <br>
+                        <br>
+                        <br>
+                        
+                        <li>
+                            <a href="engineProductService.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        
+                        <li>
+                            <a href="ProductService.html"><i class="fa fa-table fa-fw"></i>Tables</a>
+                        </li>
+
+                        <li>
+                            <a href="pickup.html"><i class="fa fa-files-o fa-fw"></i>Pick Ups
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="blank.html"><i class="fa fa-files-o fa-fw"></i>Blank Page
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">BergerPaintsIndia</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Page Likes Table
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="dataTable_wrapper">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Likes</th>
+                                            <th>Talking About</th>
+                                            <th>Found</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX"><td>
+26-Mar-15
+</td><td>
+63143
+</td><td>
+2964
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+27-Mar-15
+</td><td>
+64521
+</td><td>
+3012
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+28-Mar-15
+</td><td>
+66000
+</td><td>
+3200
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+29-Mar-15
+</td><td>
+67332
+</td><td>
+3514
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+30-Mar-15
+</td><td>
+67345
+</td><td>
+3514
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+31-Mar-15
+</td><td>
+68530
+</td><td>
+7085
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+01-Apr-15
+</td><td>
+68752
+</td><td>
+7895
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+02-Apr-15
+</td><td>
+68932
+</td><td>
+5689
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+03-Apr-15
+</td><td>
+68923
+</td><td>
+5689
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+04-Apr-15
+</td><td>
+68915
+</td><td>
+5689
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+05-Apr-15
+</td><td>
+69245
+</td><td>
+5689
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+06-Apr-15
+</td><td>
+69356
+</td><td>
+5689
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+07-Apr-15
+</td><td>
+69678
+</td><td>
+5689
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+08-Apr-15
+</td><td>
+69759
+</td><td>
+5689
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+09-Apr-15
+</td><td>
+69835
+</td><td>
+5689
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+10-Apr-15
+</td><td>
+69926
+</td><td>
+4587
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+11-Apr-15
+</td><td>
+71215
+</td><td>
+4587
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+12-Apr-15
+</td><td>
+72345
+</td><td>
+5486
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+13-Apr-15
+</td><td>
+73548
+</td><td>
+4582
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+14-Apr-15
+</td><td>
+74479
+</td><td>
+3568
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+15-Apr-15
+</td><td>
+75559
+</td><td>
+2548
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+16-Apr-15
+</td><td>
+76626
+</td><td>
+2658
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+17-Apr-15
+</td><td>
+76723
+</td><td>
+2548
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+18-Apr-15
+</td><td>
+77826
+</td><td>
+2548
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+19-Apr-15
+</td><td>
+78925
+</td><td>
+2475
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+20-Apr-15
+</td><td>
+79146
+</td><td>
+1669
+</td><td>
+no
+</td></tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                            
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            
+        </div>
+        <!-- /#page-wrapper -->
+
+
+
+
+        
+
+
+        
+        <hr>
+        <hr>
+
+
+
+        <!-- /#page-wrapper -->
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">midwestbelts</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Page likes Table
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="dataTable_wrapper">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Likes</th>
+                                            <th>Talking About</th>
+                                            <th>Found</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX"><td>
+31-Mar-15
+</td><td>
+463
+</td><td>
+24
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+01-Apr-15
+</td><td>
+478
+</td><td>
+12
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+02-Apr-15
+</td><td>
+525
+</td><td>
+23
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+03-Apr-15
+</td><td>
+556
+</td><td>
+25
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+04-Apr-15
+</td><td>
+645
+</td><td>
+24
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+05-Apr-15
+</td><td>
+658
+</td><td>
+26
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+06-Apr-15
+</td><td>
+789
+</td><td>
+27
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+07-Apr-15
+</td><td>
+812
+</td><td>
+26
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+08-Apr-15
+</td><td>
+823
+</td><td>
+24
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+09-Apr-15
+</td><td>
+824
+</td><td>
+25
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+10-Apr-15
+</td><td>
+825
+</td><td>
+26
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+11-Apr-15
+</td><td>
+826
+</td><td>
+24
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+12-Apr-15
+</td><td>
+899
+</td><td>
+25
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+13-Apr-15
+</td><td>
+956
+</td><td>
+26
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+14-Apr-15
+</td><td>
+978
+</td><td>
+25
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+15-Apr-15
+</td><td>
+989
+</td><td>
+26
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+16-Apr-15
+</td><td>
+997
+</td><td>
+25
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+17-Apr-15
+</td><td>
+1000
+</td><td>
+26
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+18-Apr-15
+</td><td>
+1166
+</td><td>
+25
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+19-Apr-15
+</td><td>
+1210
+</td><td>
+26
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+20-Apr-15
+</td><td>
+1242
+</td><td>
+32
+</td><td>
+no
+</td></tr>
+
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                            
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            
+        </div>
+        <!-- /#page-wrapper -->
+        
+        
+
+
+
+
+        <hr>
+        <hr>
+        
+                <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">upkartajwhite</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Page likes Table
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="dataTable_wrapper">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Likes</th>
+                                            <th>Talking About</th>
+                                            <th>Found</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX"><td>
+31-Mar-15
+</td><td>
+23261
+</td><td>
+7261
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+01-Apr-15
+</td><td>
+24325
+</td><td>
+2156
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+02-Apr-15
+</td><td>
+25689
+</td><td>
+2315
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+03-Apr-15
+</td><td>
+25789
+</td><td>
+2356
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+04-Apr-15
+</td><td>
+26354
+</td><td>
+2354
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+05-Apr-15
+</td><td>
+27896
+</td><td>
+3568
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+06-Apr-15
+</td><td>
+28125
+</td><td>
+2658
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+07-Apr-15
+</td><td>
+29145
+</td><td>
+3568
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+08-Apr-15
+</td><td>
+30215
+</td><td>
+2356
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+09-Apr-15
+</td><td>
+31256
+</td><td>
+2356
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+10-Apr-15
+</td><td>
+32254
+</td><td>
+2145
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+11-Apr-15
+</td><td>
+33456
+</td><td>
+2568
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+12-Apr-15
+</td><td>
+36254
+</td><td>
+2568
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+13-Apr-15
+</td><td>
+37244
+</td><td>
+3214
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+14-Apr-15
+</td><td>
+37321
+</td><td>
+2315
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+15-Apr-15
+</td><td>
+37758
+</td><td>
+2145
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+16-Apr-15
+</td><td>
+38012
+</td><td>
+2145
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+17-Apr-15
+</td><td>
+38523
+</td><td>
+2356
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+18-Apr-15
+</td><td>
+39125
+</td><td>
+2548
+</td><td>
+yes
+</td></tr>
+<tr class="odd gradeX"><td>
+19-Apr-15
+</td><td>
+39326
+</td><td>
+4523
+</td><td>
+no
+</td></tr>
+<tr class="odd gradeX"><td>
+20-Apr-15
+</td><td>
+39518
+</td><td>
+5596
+</td><td>
+yes
+</td></tr>
+
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                            
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            
+        </div>
+        <!-- /#page-wrapper -->
+        
+        
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="{% static 'bower_components/metisMenu/dist/metisMenu.min.js' %}"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="{% static 'bower_components/datatables/media/js/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js' %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static 'dist/js/sb-admin-2.js' %}"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+                responsive: true
+        });
+    });
+    </script>
+
+</body>
+
+</html>

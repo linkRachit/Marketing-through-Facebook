@@ -25,8 +25,21 @@ urlpatterns = [
 
 
     url(r'^page/blank\.html$', 'page.views.page_home', name='page_home'),
-    url(r'^page/tables\.html$', 'page.views.page_table', name='page_table'),
-    url(r'^page/engine\.html$', 'page.views.page_engine', name='page_engine'),
+
+    url(r'^page/pickup\.html$', 'page.views.page_pickup', name='page_pickup'),
+
+    url(r'^page/ProductService\.html$', 'page.views.page_ProductService', name='page_ProductService'),
+    url(r'^page/PublicFigure\.html$', 'page.views.page_PublicFigure', name='page_PublicFigure'),
+
+    url(r'^page/engineProductService\.html$', 'page.views.page_engineProductService', name='page_engineProductService'),
+    url(r'^page/enginePublicFigure\.html$', 'page.views.page_enginePublicFigure', name='page_enginePublicFigure'),
+
+
+
+
+
+
+
 
     url(r'^website/blank\.html$', 'website.views.website_home', name='website_home'),
     url(r'^website/tables\.html$', 'website.views.website_table', name='website_table'),
