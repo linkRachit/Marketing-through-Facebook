@@ -444,6 +444,406 @@ upkartajwhite:
     });
     
 
-    
+    Morris.Area({
+        element: 'morris-area-chart3',
+        
+        data: [{period: '2015-03-29', 
+AppMakr: 
+0
+,talkingabout: 
+0
+}, 
+{period: '2015-03-30', 
+AppMakr: 
+183
+,talkingabout: 
+0
+}, 
+{period: '2015-03-31', 
+AppMakr: 
+312
+,talkingabout: 
+-62
+}, 
+{period: '2015-04-01', 
+AppMakr: 
+200
+,talkingabout: 
+-507
+}, 
+{period: '2015-04-02', 
+AppMakr: 
+222
+,talkingabout: 
+0
+}, 
+{period: '2015-04-03', 
+AppMakr: 
+215
+,talkingabout: 
+0
+}, 
+{period: '2015-04-04', 
+AppMakr: 
+230
+,talkingabout: 
+0
+}, 
+{period: '2015-04-05', 
+AppMakr: 
+233
+,talkingabout: 
+0
+}, 
+{period: '2015-04-06', 
+AppMakr: 
+100
+,talkingabout: 
+0
+}, 
+{period: '2015-04-07', 
+AppMakr: 
+644
+,talkingabout: 
+0
+}, 
+{period: '2015-04-08', 
+AppMakr: 
+156
+,talkingabout: 
+0
+}, 
+{period: '2015-04-09', 
+AppMakr: 
+402
+,talkingabout: 
+0
+}, 
+{period: '2015-04-10', 
+AppMakr: 
+577
+,talkingabout: 
+0
+}, 
+{period: '2015-04-11', 
+AppMakr: 
+121
+,talkingabout: 
+0
+}, 
+{period: '2015-04-12', 
+AppMakr: 
+102
+,talkingabout: 
+0
+}, 
+{period: '2015-04-13', 
+AppMakr: 
+700
+,talkingabout: 
+0
+}, 
+{period: '2015-04-14', 
+AppMakr: 
+410
+,talkingabout: 
+0
+}, 
+{period: '2015-04-15', 
+AppMakr: 
+190
+,talkingabout: 
+0
+}, 
+{period: '2015-04-16', 
+AppMakr: 
+198
+,talkingabout: 
+0
+}, 
+{period: '2015-04-17', 
+AppMakr: 
+179
+,talkingabout: 
+0
+}, 
+{period: '2015-04-18', 
+AppMakr: 
+221
+,talkingabout: 
+0
+}, 
+{period: '2015-04-19', 
+AppMakr: 
+133
+,talkingabout: 
+0
+}, 
+{period: '2015-04-20', 
+AppMakr: 
+106
+,talkingabout: 
+2550
+}],
+        xkey: 'period',
+        ykeys: ['AppMakr','talkingabout'],
+        labels: ['AppMakr','talkingabout'],
+        pointSize: 2,
+        hideHover: 'auto',
+        resize: true
+    });
+
+
+    Morris.Area({
+        element: 'morris-area-chart4',
+        
+        data: [{period: '2015-04-02', 
+icicidirect: 
+0
+,talkingabout: 
+0
+}, 
+{period: '2015-04-03', 
+icicidirect: 
+77
+,talkingabout: 
+22
+}, 
+{period: '2015-04-04', 
+icicidirect: 
+123
+,talkingabout: 
+28
+}, 
+{period: '2015-04-05', 
+icicidirect: 
+147
+,talkingabout: 
+2
+}, 
+{period: '2015-04-06', 
+icicidirect: 
+68
+,talkingabout: 
+0
+}, 
+{period: '2015-04-07', 
+icicidirect: 
+95
+,talkingabout: 
+3
+}, 
+{period: '2015-04-08', 
+icicidirect: 
+183
+,talkingabout: 
+18
+}, 
+{period: '2015-04-09', 
+icicidirect: 
+181
+,talkingabout: 
+0
+}, 
+{period: '2015-04-10', 
+icicidirect: 
+249
+,talkingabout: 
+0
+}, 
+{period: '2015-04-11', 
+icicidirect: 
+111
+,talkingabout: 
+0
+}, 
+{period: '2015-04-12', 
+icicidirect: 
+67
+,talkingabout: 
+0
+}, 
+{period: '2015-04-13', 
+icicidirect: 
+72
+,talkingabout: 
+0
+}, 
+{period: '2015-04-14', 
+icicidirect: 
+100
+,talkingabout: 
+0
+}, 
+{period: '2015-04-15', 
+icicidirect: 
+98
+,talkingabout: 
+0
+}, 
+{period: '2015-04-16', 
+icicidirect: 
+142
+,talkingabout: 
+0
+}, 
+{period: '2015-04-17', 
+icicidirect: 
+80
+,talkingabout: 
+0
+}, 
+{period: '2015-04-18', 
+icicidirect: 
+67
+,talkingabout: 
+0
+}, 
+{period: '2015-04-19', 
+icicidirect: 
+66
+,talkingabout: 
+0
+}, 
+{period: '2015-04-20', 
+icicidirect: 
+81
+,talkingabout: 
+19
+}],
+        xkey: 'period',
+        ykeys: ['icicidirect','talkingabout'],
+        labels: ['icicidirect','talkingabout'],
+        pointSize: 2,
+        hideHover: 'auto',
+        resize: true
+    });
+
+
+
+
+    Morris.Area({
+        element: 'morris-area-chart5',
+        
+        data: [{period: '2015-04-03', 
+Payoneer: 
+0
+,talkingabout: 
+0
+}, 
+{period: '2015-04-04', 
+Payoneer: 
+291
+,talkingabout: 
+161
+}, 
+{period: '2015-04-05', 
+Payoneer: 
+124
+,talkingabout: 
+0
+}, 
+{period: '2015-04-06', 
+Payoneer: 
+333
+,talkingabout: 
+0
+}, 
+{period: '2015-04-07', 
+Payoneer: 
+333
+,talkingabout: 
+0
+}, 
+{period: '2015-04-08', 
+Payoneer: 
+532
+,talkingabout: 
+0
+}, 
+{period: '2015-04-09', 
+Payoneer: 
+225
+,talkingabout: 
+0
+}, 
+{period: '2015-04-10', 
+Payoneer: 
+243
+,talkingabout: 
+0
+}, 
+{period: '2015-04-11', 
+Payoneer: 
+532
+,talkingabout: 
+0
+}, 
+{period: '2015-04-12', 
+Payoneer: 
+333
+,talkingabout: 
+0
+}, 
+{period: '2015-04-13', 
+Payoneer: 
+300
+,talkingabout: 
+0
+}, 
+{period: '2015-04-14', 
+Payoneer: 
+367
+,talkingabout: 
+0
+}, 
+{period: '2015-04-15', 
+Payoneer: 
+333
+,talkingabout: 
+0
+}, 
+{period: '2015-04-16', 
+Payoneer: 
+333
+,talkingabout: 
+0
+}, 
+{period: '2015-04-17', 
+Payoneer: 
+667
+,talkingabout: 
+0
+}, 
+{period: '2015-04-18', 
+Payoneer: 
+123
+,talkingabout: 
+0
+}, 
+{period: '2015-04-19', 
+Payoneer: 
+334
+,talkingabout: 
+0
+}, 
+{period: '2015-04-20', 
+Payoneer: 
+799
+,talkingabout: 
+0
+}],
+        xkey: 'period',
+        ykeys: ['Payoneer','talkingabout'],
+        labels: ['Payoneer','talkingabout'],
+        pointSize: 2,
+        hideHover: 'auto',
+        resize: true
+    }); 
+
+
+
+
+
 
 });
