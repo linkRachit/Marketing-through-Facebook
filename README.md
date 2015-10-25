@@ -1,8 +1,15 @@
-# Marketing-through-Facebook
+# CONTENT BASED ANALYSIS ON MARKETING THROUGH FACEBOOK
 
 
-project will be completed till 19-may
-then after i will upload my full database
+upload project only contain-
+              Static working site
+              partial Database
+              only required entries
+              but with full result
 
-
-Site --->http://linkrachit.github.io/
+Original project contains-
+              Facebook crawling codes
+              Dyanamic page creater
+              full database of 25 days
+              
+Project is partially uploaded due to Fork issues by other developers.    
